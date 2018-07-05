@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Centrix</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/about_style.css">
+		<link rel="stylesheet" type="text/css" href="../css/modal.css">
+		<script defer type="text/javascript" src="../js/jQuery.js"></script>
+		<script defer type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+		<script defer type="text/javascript" src="../js/main.js"></script>
+	</head>
+	
+
+	<body style='overflow-x:hidden;'>
+
+		<!--ВЕРСТКА МОДАЛЬНОГО ОКНА-->
+				
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<div class="caption">
+							<h1>Перезвоните мне</h1>
+							<svg>
+		  						<line x1="115" y1="0" x2="185" y2="0" stroke-width="4px" stroke="#1399f4" />
+							</svg>
+						</div>
+					</div>
+					<div class="modal-body">
+						
+						<p>Заполните форму ниже и наш менеджер свяжется с Вами в ближайшее время!</p>
+
+						<form>
+							<input type="text" class="form-control" id="exampleInputName2" placeholder="Ваше имя">
+							<input type="number" class="form-control" id="exampleInputEmail2" placeholder="Номер Телефона">
+						</form>
+
+					</div>
+					<div class="modal-footer">
+						<button class="btnBorder" type="button" data-toggle="modal" data-target="#myModalSumbit">Перезвоните мне</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="modal fade" id="myModalSumbit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<div class="caption">
+							<h1>Ваша Заявка отправлена</h1>
+							<svg>
+		  						<line x1="115" y1="0" x2="185" y2="0" stroke-width="4px" stroke="#1399f4" />
+							</svg>
+						</div>
+					</div>
+					<div class="modal-body">
+						
+						<p>Спасибо! Ваша заявка отправлена! В ближайшее время наш менджер перезвонит вам.</p>
+
+ 					</div>
+					<div class="modal-footer">
+						<button class="btnBorder" onclick="location.href = '../index.html'">Хорошо</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--КОНЕЦ ВЕРСТКА МОДАЛЬНОГО ОКНА-->
+		
+		<!--ВЕРСТКА HEADER-->
+		<div id="backgroundBlackShadow">
+			<div id="header">
+				<div class="container">
+					
+					<div class="row">
+						<div id="topHeader">
+							<div class="col-lg-2 col-sm-12 logo">
+								<img src="../image/imgHeader/logo.png">
+								<h6>Забота о ваших девайсах!</h6>
+							</div>
+							<div class="col-lg-4 col-sm-4 schedule">
+								<i class="fas fa-map-marker-alt"></i>
+								<ul>
+									<li>Днепр, ул. Короленко 1</li>
+									<li>Понедельник-Пятница: с 10:00 до 19:00</li>
+									<li>Суббота: с 10:00 до 16:00</li>
+									<li>Воскресенье: Выходной</li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-sm-4 contact">
+								<ul>
+									<li><span>+38 (096)</span><span class="bold"> 532-34-34</span></li>
+							
+									<li><span>+38 (073)</span><span class="bold"> 113-95-33</span></li>
+									
+									<li><span>+38 (066)</span><span class="bold"> 991-30-79</span></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-sm-4 feedback">
+								<button class="btnBorder" type="button" data-toggle="modal" data-target="#myModal">Перезвоните мне</button><br>
+								<button class="btnBorder">Статус ремонта</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row widthNavHeader">	
+						<div id="navHeader">
+							<nav class="navbar navbar-default">
+								<div class="container-fluid">
+								    <!-- Brand and toggle get grouped for better mobile display -->
+								    <div class="navbar-header">
+								    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							    	    <span class="sr-only">Toggle navigation</span>
+								        <span class="icon-bar"></span>
+								        <span class="icon-bar"></span>
+								        <span class="icon-bar"></span>
+								        </button>
+  								    </div>
+
+							    <!-- Collect the nav links, forms, and other content for toggling -->
+							    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							    		<ul class="nav navbar-nav">
+									        <li><a href="../index.html">Главная<span class="sr-only">(current)</span></a></li>
+									        <li class="dropdown">
+								        		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Услуги</a>
+							        			<ul class="dropdown-menu">
+										            <li><a href="repair_phone.html">Ремонт телефонов</a></li>
+										            <li><a href="repair_notebook.html">Ремонт ноутбуков</a></li>
+										            <li><a href="repair_tablet.html">Ремонт планшетов</a></li>
+										            <li><a href="repair_gyroscope.html">Ремонт гироскутеров</a></li>
+										        </ul>
+								        	</li>
+								        	<li><a href="about.html">О нас</a></li>
+								        	<li><a href="blog.html">Блог</a></li>
+								        	<li><a href="contact.html">Контакты</a></li>
+							        	</ul>
+						    		</div><!-- /.navbar-collapse -->
+								</div><!-- /.container-fluid -->
+							</nav>
+						</div>	
+					</div>
+
+					<div class="row widthHeaderTagline">
+						<div class="headerTagline">
+							<h1>о нас</h1>
+						</div>
+					</div>    
+		
+				</div>	
+			</div>
+		</div>
+		<!--КОНЕЦ ВЕРСТКИ HEADER-->
+
+		<!--ВЕРСТКА РАЗДЕЛА О НАС-->
+		<div id="about">
+			<div class="container">
+				<div class="row">
+					<p>Centrix - это сервисный центр, который осуществляет ремонт телефонов и планшетов. Наша основная задача сделать так, что бы клиент был на 100% доволен. Мы стараемся сделать по максимуму качественный ремонт, работая на репутацию. Ведь чем больше клиентов будут довольны, тем больше они порекомендуют нас своим друзьям. </p>
+
+					<div class="caption">
+						<h1>Мы фокусируемся на ключевых потребностях наших клиентов: </h1>
+						<svg>
+	  						<line x1="115" y1="0" x2="185"  y2="0" stroke-width="4px" stroke="#1399f4" />
+						</svg>
+					</div>
+
+					<div class="aboutBlock col-xs-12 col-sm-12">
+						<div class="aboutImgWrap">
+							<img src="../image/imgAbout/speed.png">
+							<div class="triangle"></div>
+						</div>
+						<h5>Скорость ремонта </h5>
+						<p>Иногда поломка случается в самый неподходящий момент. Мы это учитываем, по этому делаем все возможное что бы ремонт осуществился как можно скорее. Среднее время ремонта 3 часа. С каждым клиентом перед принятием гаджета в ремонт строго оговаривются сроки и цены.</p>
+					</div>
+
+					<div class="aboutBlock col-xs-12 col-sm-12">
+						<div class="aboutImgWrap">
+							<img src="../image/imgAbout/box.png">
+							<div class="triangle"></div>
+						</div>
+						<h5>Курьерская доставка по желанию</h5>
+						<p>Если у вас нет возможности приехать к нам, или у вас нет на это времени, вы можете вызвать курьера.</p>
+					</div>
+
+					<div class="aboutBlock col-xs-12 col-sm-12">
+						<div class="aboutImgWrap">
+							<img src="../image/imgAbout/ua.png">
+							<div class="triangle"></div>
+						</div>
+						<h5>Принимаем заказы со всей Украины</h5>
+						<p>Вы находитесь не в Днепре, но хотите отремонтировать свой гаджет у нас? Отправьте его нам Новой Почтой, и мы обсудим все детали с вами по телефону!</p>
+					</div>
+
+					<div class="aboutBlock col-xs-12 col-sm-12">
+						<div class="aboutImgWrap">
+							<img src="../image/imgAbout/map.png">
+							<div class="triangle"></div>
+						</div>
+						<h5>Находимся в центре Днепра</h5>
+						<p>Легко добраться с любой точки города. Также есть парковка во дворе.</p>
+					</div>
+
+					<div class="aboutBlock col-xs-12 col-sm-12">
+						<div class="aboutImgWrap">
+							<img src="../image/imgAbout/phone.png">
+							<div class="triangle"></div>
+						</div>
+						<h5>Даем телефон на время ремонта</h5>
+						<p>Если вы желаете оставаться на связи пока ваш смартфон находится в ремонте, мы даем вам в пользование свой телефон.</p>
+					</div>
+
+					<div class="aboutBlock col-xs-12 col-sm-12">
+						<div class="aboutImgWrap">
+							<img src="../image/imgAbout/gadget.png">
+							<div class="triangle"></div>
+						</div>
+						<h5Широкий ассортимент запчастей</h5>
+						<p>Мы ремонтируем как известные мировые бренды Apple, Samsung, Meizu, Lenovo, Xiaomi, Nokia, HTC, Sony, так и китайские девайсы бюджетного класса Doogee, Nomi, Blackview и другие.</p>
+					</div>
+
+					<div class="aboutBlock col-xs-12 col-sm-12">
+						<div class="aboutImgWrap">
+							<img src="../image/imgAbout/percent.png">
+							<div class="triangle"></div>
+						</div>
+						<h5>Разумная цена</h5>
+						<p>Мы предлагаем высокачественную работу по приятной цене. Наши цены вас приятно удивят.</p>
+					</div>
+
+					<div class="aboutBlock col-xs-12 col-sm-12">
+						<div class="aboutImgWrap">
+							<img src="../image/imgAbout/medal.png">
+							<div class="triangle"></div>
+						</div>
+						<h5>Гарантия 1 месяц </h5>
+						<p>Как правило бракованная запчасть или недостатки ремонта проявляются в первые 3 дня. 30 дней гарантии более чем достаточно. Каждый из сотрудников сервисного центра - профессионал в своем деле. Доверьтесь экспертам!</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--КОНЕЦ ВЕРСТКА РАЗДЕЛА О НАС-->
+
+		<!--ВЕРСТКА БЛОКА С КАРТОЙ-->
+		<div id="findUs">
+			<div class="row">
+				
+				<div class="caption">
+					<h1>Как нас найти</h1>
+					<svg>
+  						<line x1="115" y1="0" x2="185"  y2="0" stroke-width="4px" stroke="#1399f4" />
+					</svg>
+				</div>
+
+				<div id="map">
+					
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.571313800342!2d35.041665815356566!3d48.46475417925091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2e709431685%3A0xeaa347f591f9cbc6!2z0YPQuy4g0JrQvtGA0L7Qu9C10L3QutC-LCAxLCDQlNC90LjQv9GA0L4sINCU0L3QtdC_0YDQvtC_0LXRgtGA0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA0OTAwMA!5e0!3m2!1sru!2sua!4v1527000079605" width="98%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+					
+					<div class="mapContactBlock">
+						<div class="schedule">
+							<i class="fas fa-map-marker-alt"></i>
+							<ul>
+								<li>Днепр, ул. Короленко 1</li>
+								<li>Пн-Пт с 10:00 до 19:00, Сб с 10:00 до 16:00</li>
+							</ul>
+						</div>
+						<div class="contact">
+							<ul>
+								<li><span>+38 (096)</span><span class="bold"> 532-34-34</span></li>
+						
+								<li><span>+38 (073)</span><span class="bold"> 113-95-33</span></li>
+								
+								<li><span>+38 (066)</span><span class="bold"> 991-30-79</span></li>
+							</ul>
+							<button class="fullBtn" type="button" data-toggle="modal" data-target="#myModal">Заказать звонок</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--КОНЕЦ ВЕРСТКА БЛОКА С КАРТОЙ-->
+
+		<!--ВЕРСТКА FOOTER-->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<h6>© 2017 «Centrix» – Ремонт телефонов и планшетов. Создано Богданом Паратским</h6>
+					<ul>
+						<li><a href="../index.html">Главная</a></li>
+						<li><a href="../index.html#whatWeRepair">Услуги</a></li>
+						<li><a href="about.html">О нас</a></li>
+			        	<li><a href="blog.html">Блог</a></li>
+			        	<li><a href="contact.html">Контакты</a></li>	
+				    </ul>
+				</div>
+			</div>
+		</div>
+		<!--КОНЕЦ ВЕРСТКА FOOTER-->
+
+	
+	</body>
+</html>
+
+
+						

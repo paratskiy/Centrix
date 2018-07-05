@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Centrix</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/repair_style.css">
+		<link rel="stylesheet" type="text/css" href="../css/modal.css">
+		<script defer type="text/javascript" src="../js/jQuery.js"></script>
+		<script defer src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script defer type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+		<script defer type="text/javascript" src="../js/jQueryMy.js"></script>
+		<script defer type="text/javascript" src="../js/main.js"></script>
+	</head>
+	
+
+	<body style='overflow-x:hidden;'>
+
+		<!--ВЕРСТКА МОДАЛЬНОГО ОКНА-->
+				
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<div class="caption">
+							<h1>Перезвоните мне</h1>
+							<svg>
+		  						<line x1="115" y1="0" x2="185" y2="0" stroke-width="4px" stroke="#1399f4" />
+							</svg>
+						</div>
+					</div>
+					<div class="modal-body">
+						
+						<p>Заполните форму ниже и наш менеджер свяжется с Вами в ближайшее время!</p>
+
+						<form>
+							<input type="text" class="form-control" id="exampleInputName2" placeholder="Ваше имя">
+							<input type="number" class="form-control" id="exampleInputEmail2" placeholder="Номер Телефона">
+						</form>
+
+					</div>
+					<div class="modal-footer">
+						<button class="btnBorder" type="button" data-toggle="modal" data-target="#myModalSumbit">Перезвоните мне</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="modal fade" id="myModalSumbit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<div class="caption">
+							<h1>Ваша Заявка отправлена</h1>
+							<svg>
+		  						<line x1="115" y1="0" x2="185" y2="0" stroke-width="4px" stroke="#1399f4" />
+							</svg>
+						</div>
+					</div>
+					<div class="modal-body">
+						
+						<p>Спасибо! Ваша заявка отправлена! В ближайшее время наш менджер перезвонит вам.</p>
+
+ 					</div>
+					<div class="modal-footer">
+						<button class="btnBorder" onclick="location.href = '../index.html'">Хорошо</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--КОНЕЦ ВЕРСТКА МОДАЛЬНОГО ОКНА-->
+		
+		<!--ВЕРСТКА HEADER-->
+		<div id="backgroundBlackShadow">
+			<div id="header">
+				<div class="container">
+					
+					<div class="row">
+						<div id="topHeader">
+							<div class="col-lg-2 col-sm-12 logo">
+								<img src="../image/imgHeader/logo.png">
+								<h6>Забота о ваших девайсах!</h6>
+							</div>
+							<div class="col-lg-4 col-sm-4 schedule">
+								<i class="fas fa-map-marker-alt"></i>
+								<ul>
+									<li>Днепр, ул. Короленко 1</li>
+									<li>Понедельник-Пятница: с 10:00 до 19:00</li>
+									<li>Суббота: с 10:00 до 16:00</li>
+									<li>Воскресенье: Выходной</li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-sm-4 contact">
+								<ul>
+									<li><span>+38 (096)</span><span class="bold"> 532-34-34</span></li>
+							
+									<li><span>+38 (073)</span><span class="bold"> 113-95-33</span></li>
+									
+									<li><span>+38 (066)</span><span class="bold"> 991-30-79</span></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-sm-4 feedback">
+								<button class="btnBorder" type="button" data-toggle="modal" data-target="#myModal">Перезвоните мне</button><br>
+								<button class="btnBorder">Статус ремонта</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row widthNavHeader">	
+						<div id="navHeader">
+							<nav class="navbar navbar-default">
+								<div class="container-fluid">
+								    <!-- Brand and toggle get grouped for better mobile display -->
+								    <div class="navbar-header">
+								    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							    	    <span class="sr-only">Toggle navigation</span>
+								        <span class="icon-bar"></span>
+								        <span class="icon-bar"></span>
+								        <span class="icon-bar"></span>
+								        </button>
+  								    </div>
+
+							    <!-- Collect the nav links, forms, and other content for toggling -->
+							    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							    		<ul class="nav navbar-nav">
+									        <li><a href="../index.html">Главная<span class="sr-only">(current)</span></a></li>
+									        <li class="dropdown">
+								        		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Услуги</a>
+							        			<ul class="dropdown-menu">
+										            <li><a href="repair_phone.html">Ремонт телефонов</a></li>
+										            <li><a href="repair_notebook.html">Ремонт ноутбуков</a></li>
+										            <li><a href="repair_tablet.html">Ремонт планшетов</a></li>
+										            <li><a href="repair_gyroscope.html">Ремонт гироскутеров</a></li>
+										        </ul>
+								        	</li>
+								        	<li><a href="about.html">О нас</a></li>
+								        	<li><a href="blog.html">Блог</a></li>
+								        	<li><a href="contact.html">Контакты</a></li>
+							        	</ul>
+						    		</div><!-- /.navbar-collapse -->
+								</div><!-- /.container-fluid -->
+							</nav>
+						</div>	
+					</div>
+
+					<div class="row widthHeaderTagline">
+						<div class="headerTagline">
+							<h1>ремонт телефонов</h1>
+						</div>
+					</div>    
+		
+				</div>	
+			</div>
+		</div>
+		<!--КОНЕЦ ВЕРСТКИ HEADER-->
+
+		<!--ВЕРСТКА БЛОКА "что мы чиним"-->
+		<div id="pageWhatCrashed">
+			<div id="whatWeRepair">
+				<div class="container">
+					<div class="row">
+						
+						<div class="caption">
+							<h1>Что сломалось?</h1>
+							<svg>
+		  						<line x1="115" y1="0" x2="185" y2="0" stroke-width="4px" stroke="#1399f4" />
+							</svg>
+						</div>
+						
+						
+							<div class="col-md-4 col-sm-6 block">
+								<div id="0" class="insideWrapBlock">
+									<div class="whatCrashedBlockImg">
+										<img src="../image/imgRepair/repair_phone/screen.png">
+									</div>
+									<div class="whatCrashedBlockText">
+										<h3>Экран</h3>
+									</div>
+								</div>
+							</div>
+													
+							<div class="col-md-4 col-sm-6 block">
+								<div id="1" class="insideWrapBlock">
+									<div class="whatCrashedBlockImg">
+										<img src="../image/imgRepair/repair_phone/cam.png">
+									</div>
+									<div class="whatCrashedBlockText">
+										<h3>Камера</h3>
+									</div>
+								</div>
+							</div>
+													
+							<div class="col-md-4 col-sm-6 block">
+								<div id="2" class="insideWrapBlock">
+									<div class="whatCrashedBlockImg">
+										<img src="../image/imgRepair/repair_phone/water.png">
+									</div>
+									<div class="whatCrashedBlockText">
+										<h3>Попала жидкость</h3>
+									</div>
+								</div>
+							</div>
+							
+							<div class="myPopover col-sm-12 left">
+								<div class="myPopoverInsideWrap">
+									<h4>Что мы можем сделать:</h4>
+									<ul>
+										<li>– Замена стекла</li>
+										<li>– Замена дисплейного модуля</li>
+										<li>– Чистка дисплея от пыли</li>
+									</ul>
+									<ul>
+										<li>– Ремонт дисплея после попадания влаги</li>
+										<li>– Калибровка экрана</li>
+										<li>– Наклейка защитного стекла</li>
+									</ul>
+									<ul>
+										<li>– Наклейка защитной пленки</li>
+										<li>– Выведение легких царапин и потертостей</li>
+										<li>– Диагностика</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="myPopover col-sm-12 center">
+								<div class="myPopoverInsideWrap">
+									<h4>Что мы можем сделать:</h4>
+									<ul>
+										<li>– Замена стекла</li>
+										<li>– Замена дисплейного модуля</li>
+										<li>– Чистка дисплея от пыли</li>
+									</ul>
+									<ul>
+										<li>– Ремонт дисплея после попадания влаги</li>
+										<li>– Калибровка экрана</li>
+										<li>– Наклейка защитного стекла</li>
+									</ul>
+									<ul>
+										<li>– Наклейка защитной пленки</li>
+										<li>– Выведение легких царапин и потертостей</li>
+										<li>– Диагностика</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="myPopover col-sm-12 right" >
+								<div class="myPopoverInsideWrap">
+									<h4>Что мы можем сделать:</h4>
+									<ul>
+										<li>– Замена стекла</li>
+										<li>– Замена дисплейного модуля</li>
+										<li>– Чистка дисплея от пыли</li>
+									</ul>
+									<ul>
+										<li>– Ремонт дисплея после попадания влаги</li>
+										<li>– Калибровка экрана</li>
+										<li>– Наклейка защитного стекла</li>
+									</ul>
+									<ul>
+										<li>– Наклейка защитной пленки</li>
+										<li>– Выведение легких царапин и потертостей</li>
+										<li>– Диагностика</li>
+									</ul>
+								</div>
+							</div>
+						
+
+						
+							<div class="col-md-4 col-sm-6 block">
+								<div id="3" class="insideWrapBlock">
+									<div class="whatCrashedBlockImg">
+										<img src="../image/imgRepair/repair_phone/wifi.png">
+									</div>
+									<div class="whatCrashedBlockText">
+										<h3>Не работает Wifi / Bluetooth</h3>
+									</div>	
+								</div>
+							</div>
+													
+							<div class="col-md-4 col-sm-6 block">
+								<div id="4" class="insideWrapBlock">
+									<div class="whatCrashedBlockImg">
+										<img src="../image/imgRepair/repair_phone/notTurnOn.png">
+									</div>
+									<div class="whatCrashedBlockText">
+										<h3>Не включается</h3>
+									</div>
+								</div>
+							</div>
+													
+							<div class="col-md-4 col-sm-6 block">
+								<div id="5" class="insideWrapBlock">
+									<div class="whatCrashedBlockImg">
+										<img src="../image/imgRepair/repair_phone/notCharge.png">
+									</div>
+									<div class="whatCrashedBlockText">
+										<h3>Не заряжается</h3>
+									</div>
+								</div>
+							</div>
+							
+							<div class="myPopover col-sm-12 left">
+								<div class="myPopoverInsideWrap">
+									<h4>Что мы можем сделать:</h4>
+									<ul>
+										<li>– Замена стекла</li>
+										<li>– Замена дисплейного модуля</li>
+										<li>– Чистка дисплея от пыли</li>
+									</ul>
+									<ul>
+										<li>– Ремонт дисплея после попадания влаги</li>
+										<li>– Калибровка экрана</li>
+										<li>– Наклейка защитного стекла</li>
+									</ul>
+									<ul>
+										<li>– Наклейка защитной пленки</li>
+										<li>– Выведение легких царапин и потертостей</li>
+										<li>– Диагностика</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="myPopover col-sm-12 center">
+								<div class="myPopoverInsideWrap">
+									<h4>Что мы можем сделать:</h4>
+									<ul>
+										<li>– Замена стекла</li>
+										<li>– Замена дисплейного модуля</li>
+										<li>– Чистка дисплея от пыли</li>
+									</ul>
+									<ul>
+										<li>– Ремонт дисплея после попадания влаги</li>
+										<li>– Калибровка экрана</li>
+										<li>– Наклейка защитного стекла</li>
+									</ul>
+									<ul>
+										<li>– Наклейка защитной пленки</li>
+										<li>– Выведение легких царапин и потертостей</li>
+										<li>– Диагностика</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="myPopover col-sm-12 right" >
+								<div class="myPopoverInsideWrap">
+									<h4>Что мы можем сделать:</h4>
+									<ul>
+										<li>– Замена стекла</li>
+										<li>– Замена дисплейного модуля</li>
+										<li>– Чистка дисплея от пыли</li>
+									</ul>
+									<ul>
+										<li>– Ремонт дисплея после попадания влаги</li>
+										<li>– Калибровка экрана</li>
+										<li>– Наклейка защитного стекла</li>
+									</ul>
+									<ul>
+										<li>– Наклейка защитной пленки</li>
+										<li>– Выведение легких царапин и потертостей</li>
+										<li>– Диагностика</li>
+									</ul>
+								</div>
+							</div>
+						
+							<div class="col-md-4 col-sm-6 block">
+								<div id="6" class="insideWrapBlock">
+									<div class="whatCrashedBlockImg">
+										<img src="../image/imgRepair/repair_phone/micro.png">
+									</div>
+									<div class="whatCrashedBlockText">
+										<h3>Микрофон или динамик</h3>
+									</div>
+								</div>
+							</div>
+													
+							<div class="col-md-4 col-sm-6 block">
+								<div id="7" class="insideWrapBlock">
+									<div class="whatCrashedBlockImg">
+										<img src="../image/imgRepair/repair_phone/case.png">
+									</div>
+									<div class="whatCrashedBlockText">
+										<h3>Корпус</h3>
+									</div>
+								</div>
+							</div>
+												
+							<div class="col-md-4 col-sm-6 block">
+								<div id="8" class="insideWrapBlock">
+									<div class="whatCrashedBlockImg">
+										<img src="../image/imgRepair/repair_phone/buttons.png">
+									</div>
+									<div class="whatCrashedBlockText">
+										<h3>Кнопки</h3>
+									</div>
+								</div>
+							</div>
+							
+							<div class="myPopover col-sm-12 left">
+								<div class="myPopoverInsideWrap">
+									<h4>Что мы можем сделать:</h4>
+									<ul>
+										<li>– Замена стекла</li>
+										<li>– Замена дисплейного модуля</li>
+										<li>– Чистка дисплея от пыли</li>
+									</ul>
+									<ul>
+										<li>– Ремонт дисплея после попадания влаги</li>
+										<li>– Калибровка экрана</li>
+										<li>– Наклейка защитного стекла</li>
+									</ul>
+									<ul>
+										<li>– Наклейка защитной пленки</li>
+										<li>– Выведение легких царапин и потертостей</li>
+										<li>– Диагностика</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="myPopover col-sm-12 center">
+								<div class="myPopoverInsideWrap">
+									<h4>Что мы можем сделать:</h4>
+									<ul>
+										<li>– Замена стекла</li>
+										<li>– Замена дисплейного модуля</li>
+										<li>– Чистка дисплея от пыли</li>
+									</ul>
+									<ul>
+										<li>– Ремонт дисплея после попадания влаги</li>
+										<li>– Калибровка экрана</li>
+										<li>– Наклейка защитного стекла</li>
+									</ul>
+									<ul>
+										<li>– Наклейка защитной пленки</li>
+										<li>– Выведение легких царапин и потертостей</li>
+										<li>– Диагностика</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="myPopover col-sm-12 right" >
+								<div class="myPopoverInsideWrap">
+									<h4>Что мы можем сделать:</h4>
+									<ul>
+										<li>– Замена стекла</li>
+										<li>– Замена дисплейного модуля</li>
+										<li>– Чистка дисплея от пыли</li>
+									</ul>
+									<ul>
+										<li>– Ремонт дисплея после попадания влаги</li>
+										<li>– Калибровка экрана</li>
+										<li>– Наклейка защитного стекла</li>
+									</ul>
+									<ul>
+										<li>– Наклейка защитной пленки</li>
+										<li>– Выведение легких царапин и потертостей</li>
+										<li>– Диагностика</li>
+									</ul>
+								</div>
+							</div>
+						
+
+					</div>
+				</div>
+			</div>
+		</div>	
+		<!--КОНЕЦ ВЕРСТКА БЛОКА "что мы чиним"-->
+
+		<!--ВЕРСТКА БЛОКА С ПРИЧИНАМИ-->
+		<div id="reasons">
+			<div class="container">
+				<div class="row">
+					<div class="caption">
+						<h1>4 причины выбрать нас</h1>
+						<svg>
+	  						<line x1="115" y1="0" x2="185"  y2="0" stroke-width="4px" stroke="#1399f4" />
+						</svg>
+					</div>
+
+					<div class="col-md-3 col-sm-6">
+						<div class="insideWrapBlock">
+							<div class="reasonsBlockInsideBorder">
+								
+								<span>1</span>	
+								
+								<div style="padding-top: 25px;">
+									<div class="imgCircle">
+										<img src="../image/imgReasons/ua.png">
+									</div>
+									<h5>Принимаем гаджеты в ремонт со всей Украины</h5>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6">
+						<div class="insideWrapBlock">
+							<div class="reasonsBlockInsideBorder">
+								<span>2</span>	
+								<div style="padding-top: 25px;">
+									<div class="imgCircle">
+										<img src="../image/imgReasons/gadget.png">
+									</div>
+									<h5>Широкий ассортимент запчастей</h5>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6">
+						<div class="insideWrapBlock">
+							<div class="reasonsBlockInsideBorder">
+								<span>3</span>	
+								<div style="padding-top: 25px;">
+									<div class="imgCircle">
+										<img src="../image/imgReasons/map.png">
+									</div>
+									<h5>Удобное расположение в центре Днепра</h5>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6">
+						<div class="insideWrapBlock">
+							<div class="reasonsBlockInsideBorder">
+								<span>4</span>	
+								<div style="padding-top: 25px;">
+									<div class="imgCircle">
+										<img src="../image/imgReasons/clock.png">
+									</div>
+									<h5>80% ремонтов выполняем в течение 3х часов</h5>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--КОНЕЦ ВЕРСТКА БЛОКА С ПРИЧИНАМИ-->
+
+		<!--ВЕРСТКА БЛОКА СО СЛАЙДЕРОМ-->
+		<div id="brandsCarousel">
+			<div class="">
+		    	
+				<div class="caption">
+					<span>производители смартфонов,</span>
+					<h1>которые мы хорошо знаем и часто ремонтируем</h1>
+					<svg>
+						<line x1="115" y1="0" x2="185" y2="0" stroke-width="4px" stroke="#1399f4" />
+					</svg>	
+				</div>
+
+		    	<div class="carousel shadow"> 
+			    	<div class="carousel-button-left"><a href="#"></a></div> 
+			    	<div class="carousel-button-right"><a href="#"></a></div> 
+					
+					<div class="carousel-wrapper"> 
+					    <div class="carousel-items"> 
+							
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/Acer-Logo.png" alt="" />
+							</div>
+							
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/Apple-Logo.png" alt="" />
+							</div>
+							
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/Asus-Logo.png" alt="" />
+							</div>
+							
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/Blackview-Logo.png" alt="" />
+							</div>
+							
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/Dell-Logo.png" alt="" />
+							</div>
+							
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/Doogee-Logo.png" alt="" />
+							</div>
+							
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/Explay-Logo.png" alt="" />
+							</div>            
+							
+							<div class="carousel-block"> 
+								<img src="../image/imgCarousel/Fly-Logo.png" alt="" />
+							</div>
+
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/Hp-Logo.png" alt="" />
+							</div>
+							
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/HTC-Logo.png" alt="" />
+							</div>
+							
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/Huawei-Logo.png" alt="" />
+							</div>
+							
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/Lenovo-Logo.png" alt="" />
+							</div>
+							
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/LG-Logo.png" alt="" />
+							</div>
+							
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/Meizu-Logo.png" alt="" />
+							</div>
+							
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/Motorola-Logo.png" alt="" />
+							</div>            
+							
+							<div class="carousel-block"> 
+								<img src="../image/imgCarousel/Nokia-Logo.png" alt="" />
+							</div>
+
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/Nomi-Logo.png" alt="" />
+							</div>
+							
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/Prestigio-Logo.png" alt="" />
+							</div>
+							
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/Samsung-Logo.png" alt="" />
+							</div>
+							
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/Sony-Logo.png" alt="" />
+							</div>
+							
+							<div class="carousel-block">
+								<img src="../image/imgCarousel/Xiaomi-Logo.png" alt="" />
+							</div>
+							
+					    </div>
+					</div>
+			   </div>
+			</div>
+		</div>	
+		<!--КОНЕЦ ВЕРСТКА БЛОКА СО СЛАЙДЕРОМ-->
+
+		<!--ВЕРСТКА ОБРАТНОГО ЗВОНКА-->
+		<div id="callBack">
+			<div class="container">
+				<div class="row">
+					<div class="wrapper">
+						<div class="legend"><span>Нет возможности приехать к нам?</span></div>
+						<p>Оставьте заявку и наш курьер приедет к вам в течение 2х часов!</p>
+						<form class="form-inline">
+							<div class="form-group">
+						    	<label for="exampleInputName2"></label>
+						    	<input type="text" class="form-control" id="exampleInputName2" placeholder="Ваше имя">
+						  	</div>
+						    <div class="form-group">
+						    	<label for="exampleInputEmail2"></label>
+						    	<input type="number" class="form-control" id="exampleInputEmail2" placeholder="Телефон">
+						    </div>
+						    <button type="submit" class="btn btn-default">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--КОНЕЦ ВЕРСТКА ОБРАТНОГО ЗВОНКА-->
+
+		<!--ВЕРСТКА БЛОКА С КАРТОЙ-->
+		<div id="findUs">
+			<div class="row">
+				
+				<div class="caption">
+					<h1>Как нас найти</h1>
+					<svg>
+  						<line x1="115" y1="0" x2="185"  y2="0" stroke-width="4px" stroke="#1399f4" />
+					</svg>
+				</div>
+
+				<div id="map">
+					
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.571313800342!2d35.041665815356566!3d48.46475417925091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2e709431685%3A0xeaa347f591f9cbc6!2z0YPQuy4g0JrQvtGA0L7Qu9C10L3QutC-LCAxLCDQlNC90LjQv9GA0L4sINCU0L3QtdC_0YDQvtC_0LXRgtGA0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA0OTAwMA!5e0!3m2!1sru!2sua!4v1527000079605" width="98%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+					
+					<div class="mapContactBlock">
+						<div class="schedule">
+							<i class="fas fa-map-marker-alt"></i>
+							<ul>
+								<li>Днепр, ул. Короленко 1</li>
+								<li>Пн-Пт с 10:00 до 19:00, Сб с 10:00 до 16:00</li>
+							</ul>
+						</div>
+						<div class="contact">
+							<ul>
+								<li><span>+38 (096)</span><span class="bold"> 532-34-34</span></li>
+						
+								<li><span>+38 (073)</span><span class="bold"> 113-95-33</span></li>
+								
+								<li><span>+38 (066)</span><span class="bold"> 991-30-79</span></li>
+							</ul>
+							<button class="fullBtn" type="button" data-toggle="modal" data-target="#myModal">Заказать звонок</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--КОНЕЦ ВЕРСТКА БЛОКА С КАРТОЙ-->
+
+		<!--ВЕРСТКА FOOTER-->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<h6>© 2017 «Centrix» – Ремонт телефонов и планшетов. Создано Богданом Паратским</h6>
+					<ul>
+						<li><a href="../index.html">Главная</a></li>
+						<li><a href="../index.html#whatWeRepair">Услуги</a></li>
+						<li><a href="about.html">О нас</a></li>
+			        	<li><a href="blog.html">Блог</a></li>
+			        	<li><a href="contact.html">Контакты</a></li>
+				    </ul>
+				</div>
+			</div>
+		</div>
+		<!--КОНЕЦ ВЕРСТКА FOOTER-->
+
+	
+	</body>
+</html>
+
+
+						

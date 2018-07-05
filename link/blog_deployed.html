@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Centrix</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/modal.css">
+		<script defer type="text/javascript" src="../js/jQuery.js"></script>
+		<script defer type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+		<script defer type="text/javascript" src="../js/main.js"></script>
+	</head>
+	
+
+	<body style='overflow-x:hidden;'>
+
+		<!--ВЕРСТКА МОДАЛЬНОГО ОКНА-->
+				
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<div class="caption">
+							<h1>Перезвоните мне</h1>
+							<svg>
+		  						<line x1="115" y1="0" x2="185" y2="0" stroke-width="4px" stroke="#1399f4" />
+							</svg>
+						</div>
+					</div>
+					<div class="modal-body">
+						
+						<p>Заполните форму ниже и наш менеджер свяжется с Вами в ближайшее время!</p>
+
+						<form>
+							<input type="text" class="form-control" id="exampleInputName2" placeholder="Ваше имя">
+							<input type="number" class="form-control" id="exampleInputEmail2" placeholder="Номер Телефона">
+						</form>
+
+					</div>
+					<div class="modal-footer">
+						<button class="btnBorder" type="button" data-toggle="modal" data-target="#myModalSumbit">Перезвоните мне</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="modal fade" id="myModalSumbit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<div class="caption">
+							<h1>Ваша Заявка отправлена</h1>
+							<svg>
+		  						<line x1="115" y1="0" x2="185" y2="0" stroke-width="4px" stroke="#1399f4" />
+							</svg>
+						</div>
+					</div>
+					<div class="modal-body">
+						
+						<p>Спасибо! Ваша заявка отправлена! В ближайшее время наш менджер перезвонит вам.</p>
+
+ 					</div>
+					<div class="modal-footer">
+						<button class="btnBorder" onclick="location.href = '../index.html'">Хорошо</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--КОНЕЦ ВЕРСТКА МОДАЛЬНОГО ОКНА-->
+		
+		<!--ВЕРСТКА HEADER-->
+		<div id="backgroundBlackShadow">
+			<div id="header">
+				<div class="container">
+					
+					<div class="row">
+						<div id="topHeader">
+							<div class="col-lg-2 col-sm-12 logo">
+								<img src="../image/imgHeader/logo.png">
+								<h6>Забота о ваших девайсах!</h6>
+							</div>
+							<div class="col-lg-4 col-sm-4 schedule">
+								<i class="fas fa-map-marker-alt"></i>
+								<ul>
+									<li>Днепр, ул. Короленко 1</li>
+									<li>Понедельник-Пятница: с 10:00 до 19:00</li>
+									<li>Суббота: с 10:00 до 16:00</li>
+									<li>Воскресенье: Выходной</li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-sm-4 contact">
+								<ul>
+									<li><span>+38 (096)</span><span class="bold"> 532-34-34</span></li>
+							
+									<li><span>+38 (073)</span><span class="bold"> 113-95-33</span></li>
+									
+									<li><span>+38 (066)</span><span class="bold"> 991-30-79</span></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-sm-4 feedback">
+								<button class="btnBorder" type="button" data-toggle="modal" data-target="#myModal">Перезвоните мне</button><br>
+								<button class="btnBorder">Статус ремонта</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row widthNavHeader">	
+						<div id="navHeader">
+							<nav class="navbar navbar-default">
+								<div class="container-fluid">
+								    <!-- Brand and toggle get grouped for better mobile display -->
+								    <div class="navbar-header">
+								    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							    	    <span class="sr-only">Toggle navigation</span>
+								        <span class="icon-bar"></span>
+								        <span class="icon-bar"></span>
+								        <span class="icon-bar"></span>
+								        </button>
+  								    </div>
+
+							    <!-- Collect the nav links, forms, and other content for toggling -->
+							    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							    		<ul class="nav navbar-nav">
+									        <li><a href="../index.html">Главная<span class="sr-only">(current)</span></a></li>
+									        <li class="dropdown">
+								        		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Услуги</a>
+							        			<ul class="dropdown-menu">
+										            <li><a href="repair_phone.html">Ремонт телефонов</a></li>
+										            <li><a href="repair_notebook.html">Ремонт ноутбуков</a></li>
+										            <li><a href="repair_tablet.html">Ремонт планшетов</a></li>
+										            <li><a href="repair_gyroscope.html">Ремонт гироскутеров</a></li>
+										        </ul>
+								        	</li>
+								        	<li><a href="about.html">О нас</a></li>
+								        	<li><a href="blog.html">Блог</a></li>
+								        	<li><a href="contact.html">Контакты</a></li>
+							        	</ul>
+						    		</div><!-- /.navbar-collapse -->
+								</div><!-- /.container-fluid -->
+							</nav>
+						</div>	
+					</div>
+
+					<div class="row widthHeaderTagline">
+						<div class="headerTagline">
+							<h1>блог</h1>
+						</div>
+					</div>    
+		
+				</div>	
+			</div>
+		</div>
+		<!--КОНЕЦ ВЕРСТКИ HEADER-->
+
+		<!--ВЕРСТКА БЛОГА-->
+		<div id="blog_deployed">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 col-lg-10 col-lg-offset-1">
+
+						<a href="blog.html"><i class="fas fa-angle-left"></i>Назад</a>
+						
+						<div class="caption">
+							<h1>Украинцы выбирают iPhone X</h1>
+							<svg>
+		  						<line x1="115" y1="0" x2="185"  y2="0" stroke-width="4px" stroke="#1399f4" />
+							</svg>
+						</div>
+
+						<img src="../image/imgBlog/iphone_X.png">
+						
+						<p>В пятницу, 8 декабря, в Украине официально стартовали продажи нового флагмана от Apple — iPhone X. Несмотря на кризис в стране, первую партию люксовых устройств раскупили очень быстро. Запасы Moyo закончились уже через три часа.</p>
+
+						<p>Новая партия iPhone X поступит в пятницу, 15 декабря. В магазине ожидают, что ажиотаж к этому времени еще не спадет, но на этот раз хватит всем, кто оформил предзаказ.</p> 
+
+						<p>Сеть магазинов «Алло», у которой объемы покрупнее, тоже распродала первую партию iPhone X достаточно быстро. «Предложение со стороны производителя сильно ограничено, поэтому рекорды ставить рано. Однако те объемы, что доступны, распродались за первые три дня», — сообщил маркетинг-директор ГК «Алло» Евгений Резуев. Количество проданных единиц в магазине не раскрывают.</p>
+
+						<p>Напомним, iPhone 8/8 Plus официально продаются в Украине с конца октября, цены на модели начинаются от 25 499 грн. Среди авторизованных реселлеров, где можно купить смартфоны от Apple с официальной гарантией на 12 месяцев: «Алло», Moyo, «Цитрус», Comfy, сети «Киевстар», «Розетка», «Фокстрот», «Эльдорадо», Ringoo, iStudio.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>			
+		<!--КОНЕЦ ВЕРСТКА БЛОГА-->
+
+		<!--ВЕРСТКА БЛОКА С КАРТОЙ-->
+		<div id="findUs">
+			<div class="row">
+				
+				<div class="caption">
+					<h1>Как нас найти</h1>
+					<svg>
+  						<line x1="115" y1="0" x2="185"  y2="0" stroke-width="4px" stroke="#1399f4" />
+					</svg>
+				</div>
+
+				<div id="map">
+					
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.571313800342!2d35.041665815356566!3d48.46475417925091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2e709431685%3A0xeaa347f591f9cbc6!2z0YPQuy4g0JrQvtGA0L7Qu9C10L3QutC-LCAxLCDQlNC90LjQv9GA0L4sINCU0L3QtdC_0YDQvtC_0LXRgtGA0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA0OTAwMA!5e0!3m2!1sru!2sua!4v1527000079605" width="98%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+					
+					<div class="mapContactBlock">
+						<div class="schedule">
+							<i class="fas fa-map-marker-alt"></i>
+							<ul>
+								<li>Днепр, ул. Короленко 1</li>
+								<li>Пн-Пт с 10:00 до 19:00, Сб с 10:00 до 16:00</li>
+							</ul>
+						</div>
+						<div class="contact">
+							<ul>
+								<li><span>+38 (096)</span><span class="bold"> 532-34-34</span></li>
+						
+								<li><span>+38 (073)</span><span class="bold"> 113-95-33</span></li>
+								
+								<li><span>+38 (066)</span><span class="bold"> 991-30-79</span></li>
+							</ul>
+							<button class="fullBtn" type="button" data-toggle="modal" data-target="#myModal">Заказать звонок</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--КОНЕЦ ВЕРСТКА БЛОКА С КАРТОЙ-->
+
+		<!--ВЕРСТКА FOOTER-->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<h6>© 2017 «Centrix» – Ремонт телефонов и планшетов. Создано Богданом Паратским</h6>
+					<ul>
+						<li><a href="../index.html">Главная</a></li>
+						<li><a href="../index.html#whatWeRepair">Услуги</a></li>
+						<li><a href="about.html">О нас</a></li>
+			        	<li><a href="blog.html">Блог</a></li>
+			        	<li><a href="contact.html">Контакты</a></li>	
+				    </ul>
+				</div>
+			</div>
+		</div>
+		<!--КОНЕЦ ВЕРСТКА FOOTER-->
+
+	
+	</body>
+</html>
+
+
+						

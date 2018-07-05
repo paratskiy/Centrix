@@ -1,0 +1,92 @@
+/*Подключение шрифтов*/
+@font-face {
+	font-family: "RoboBold"; 
+	src: url("../fonts/RobotoCondensed-Bold.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "RoboLight"; 
+	src: url("../fonts/RobotoCondensed-Light.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "RoboBoldItalic"; 
+	src: url("../fonts/RobotoCondensed-BoldItalic.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "RoboItalic"; 
+	src: url("../fonts/RobotoCondensed-Italic.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "RoboLightItalic"; 
+	src: url("../fonts/RobotoCondensed-LightItalic.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "RoboRegular"; 
+	src: url("../fonts/RobotoCondensed-Regular.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+/*КОНЕЦ Подключение шрифтов*/
+
+#about {
+	font-family: "RoboRegular"; 
+}
+
+#about .aboutBlock {
+	margin-bottom: 20px;
+    min-height: 75px;
+}
+
+#about p {
+    text-align: left;
+    line-height: 24px;
+}
+
+#about .aboutImgWrap {
+	position: relative;
+    line-height: 68px;
+	margin-right: 10px;
+	float: left;
+	text-align: center;
+	width: 75px;
+	height: 75px;
+	background: #1599f3;
+}
+
+#about .aboutImgWrap img{
+	max-width: 50px;
+	max-height: 50px;
+}
+
+#about .triangle {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    border-bottom: 25px solid white;
+    border-left: 20px solid transparent;
+}
+
+#about .aboutBlock h5 {
+    text-align: left;
+    height: 17px;
+    font-family: "RoboBold";
+    font-size: 18px;
+    line-height: 24px;
+}
+

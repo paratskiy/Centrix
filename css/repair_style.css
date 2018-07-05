@@ -1,0 +1,234 @@
+/*Подключение шрифтов*/
+@font-face {
+  font-family: "RoboBold"; 
+  src: url("../fonts/RobotoCondensed-Bold.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "RoboLight"; 
+  src: url("../fonts/RobotoCondensed-Light.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "RoboBoldItalic"; 
+  src: url("../fonts/RobotoCondensed-BoldItalic.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "RoboItalic"; 
+  src: url("../fonts/RobotoCondensed-Italic.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "RoboLightItalic"; 
+  src: url("../fonts/RobotoCondensed-LightItalic.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "RoboRegular"; 
+  src: url("../fonts/RobotoCondensed-Regular.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+/*КОНЕЦ Подключение шрифтов*/
+
+.row{
+  /*position: relative;*/
+}
+
+.block{
+  z-index: 10;
+}
+
+#pageWhatCrashed #whatWeRepair .insideWrapBlock {
+    min-height: 140px;
+}
+
+#pageWhatCrashed #whatWeRepair .insideWrapBlock:hover{
+    cursor: pointer;
+    outline: 1px solid #15486bbd;
+}
+
+#pageWhatCrashed .block h3 {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+#pageWhatCrashed .whatCrashedBlockText {
+    padding: 50px 10px;
+}
+
+#pageWhatCrashed .myPopover{
+  	/*display: none;*/
+  	padding: 15px;
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    overflow: hidden;
+    max-height: 0px;
+    display: block;
+}
+
+#pageWhatCrashed .myPopover.show{
+    max-height: 500px;
+    padding: 15px;
+    position: relative;
+    transition: 1.5s;
+    opacity: 1;
+}
+
+#pageWhatCrashed .myPopoverInsideWrap {
+    position: relative;
+    width: 100%;
+    float: left;
+    padding: 10px;
+    text-align: left;
+    background: #252525;
+    color: #fff;
+}
+
+#pageWhatCrashed .myPopover.left .myPopoverInsideWrap::after {
+    content: '';
+    position: absolute;
+    left: 245px;
+    top: -26px;
+    border: 10px solid transparent;
+    border-bottom: 20px solid #252525;
+}
+
+#pageWhatCrashed .myPopover.center .myPopoverInsideWrap::after{
+    left: 620px;
+    content: '';
+    position: absolute;
+    top: -26px;
+    border: 10px solid transparent;
+    border-bottom: 20px solid #252525;
+}
+
+#pageWhatCrashed .myPopover.right .myPopoverInsideWrap::after{
+    right: 100px;
+    content: '';
+    position: absolute;
+    top: -26px;
+    border: 10px solid transparent;
+    border-bottom: 20px solid #252525;
+}
+
+#pageWhatCrashed .myPopoverInsideWrap ul {
+    float: left;
+}
+
+#pageWhatCrashed .myPopover h4 {
+    font-family: "RoboBold";
+    font-size: 17px;
+} 
+
+#pageWhatCrashed .myPopover ul li {
+    color: #eaeaea;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+#brandsCarousel .caption {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;  
+}
+
+#brandsCarousel .caption h1 {
+    margin: 0;
+}
+
+#brandsCarousel .caption span{
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/*КАРУСЕЛЬ*/
+
+
+#brandsCarousel .carousel  {
+   max-width: 1080px; /* ширина всего блока */
+   margin: 0px auto;
+   width:100%;
+}
+.carousel-wrapper {
+   margin: 10px 50px; /* отступы для стрелок */
+   overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
+   position:relative;
+}
+.carousel-items {
+   width: 10000px; /* устанавливаем большую ширину для набора элементов */
+   position: relative; /* позиционируем блок относительно основной области карусели */
+}
+.carousel-block {
+   float: left; /* выстраиваем все элементы карусели в ряд */
+   width: 250px; /* задаём ширину каждого элемента */
+   padding: 10px 10px 10px 0px; /* делаем оступы, чтобы элементы не сливались */
+}
+.carousel-block img{
+	display:block;
+}
+
+/*********** BUTTONS ***********/
+.carousel-button-left a, .carousel-button-right a{
+   width: 25px; 
+   height: 36px; 
+   position: relative;
+   top: 45px; 
+   cursor: pointer; 
+   text-decoration:none;
+}
+.carousel-button-left a{
+   float: left; 
+   background: url(../image/imgCarousel/carousel-left.png); 
+}
+.carousel-button-right a{
+   float: right;
+   background: url(../image/imgCarousel/carousel-right.png); 
+}
+
+
+
+/*КОНЕЦ КАРУСЕЛЬ*/
+
+
+
+@media (max-width: 767px){
+#pageWhatCrashed .col-md-4.col-sm-6.block{
+    	max-width: 500px;
+    	float: none;
+    	margin: 0 auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

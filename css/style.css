@@ -1,0 +1,1392 @@
+/*Подключение шрифтов*/
+@font-face {
+	font-family: "RoboBold"; 
+	src: url("../fonts/RobotoCondensed-Bold.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal;
+	
+}
+
+@font-face {
+	font-family: "RoboLight"; 
+	src: url("../fonts/RobotoCondensed-Light.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "RoboBoldItalic"; 
+	src: url("../fonts/RobotoCondensed-BoldItalic.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "RoboItalic"; 
+	src: url("../fonts/RobotoCondensed-Italic.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "RoboLightItalic"; 
+	src: url("../fonts/RobotoCondensed-LightItalic.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "RoboRegular"; 
+	src: url("../fonts/RobotoCondensed-Regular.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+/*КОНЕЦ Подключение шрифтов*/
+
+
+/*ГЛОБАЛЬНЫЕ СТИЛИ*/
+.container{
+	padding: 20px;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+body{
+	font-family: "RoboRegular";
+}
+
+/*СТИЛИ ДЛЯ ЗАГОЛОВКОВ*/
+.caption h1{
+	clear: both;
+	text-align: center;
+    color: #212121;
+    font-family: "RoboBold";
+    font-size: 30px;
+    font-weight: 700; 
+    text-transform: uppercase;
+}
+
+.caption svg{
+	height: 15px;
+}
+
+.caption {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.row{
+	
+	text-align: center;
+}
+/*КОНЕЦ СТИЛИ ДЛЯ ЗАГОЛОВКОВ*/
+
+/*Залитые кнопки*/
+button.fullBtn{
+	border: none;
+    border-radius: 0%;
+    width: 240px;
+    height: 51px;
+    background: #fb8c00;
+    color: #fff;
+    font-family: "RoboBold";
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+/* КОНЕЦ Залитые кнопки*/
+/*КОНЕЦ ГЛОБАЛЬНЫЕ СТИЛИ*/
+
+
+/*Стили для HEADER*/
+#header{
+	position: relative;
+	min-height: 580px;
+	background: url(../image/imgHeader/layer-17.png);
+	background-size: cover;
+	font-family: "RoboRegular";
+	-webkit-box-shadow: inset 0px 16px 30px 0px rgba(0,0,0,0.6);
+	-moz-box-shadow: inset 0px 16px 30px 0px rgba(0,0,0,0.6);
+	box-shadow: inset 0px 16px 30px 0px rgba(0,0,0,0.6);
+}
+
+#backgroundBlackShadow{
+	background: black;
+	/*background: url(../image/imgHeader/headerShadow.png);*/
+	
+}
+
+#topHeader > div{
+	text-align: left;
+	min-height: 124px;
+}
+
+#topHeader div:not(:last-child){
+	border-right: 2px solid  rgba(255, 255, 255, 0.2);
+}
+
+.logo h6{
+	height: 13px;
+	color: #87b7d6;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: -0.23px;
+}
+
+.schedule i{
+	color: #3195e4;
+	float: left;
+    font-size: 31px;
+}
+
+.schedule ul :first-child{
+	color: #ffffff;
+    font-family: "RoboBold";
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.schedule ul :not(:first-child){
+	color: #ffffff;
+	line-height: 25px;
+}
+
+.contact ul :first-child{
+	list-style-image: url(../image/imgHeader/kiev.png);
+}
+
+.contact ul :nth-child(2){
+	list-style-image: url(../image/imgHeader/life.png);
+}
+
+.contact ul :last-child{
+	list-style-image: url(../image/imgHeader/mts.png);
+}
+
+.contact ul li {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.contact ul li span{
+	position: relative;
+    top: -9px;
+}
+
+.contact ul li span.bold{
+	font-family: "RoboBold";
+	font-weight: 700;
+}
+
+.feedback :last-child{
+	margin-top: 10px;
+	padding: 15px 46px;	
+}
+
+button.btnBorder{
+    padding: 15px 41px;
+    border: 1px solid #fff;
+    background: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+button.btnBorder:hover{
+	color: #fb8c00;
+	border: 1px solid #fb8c00;
+}
+
+#header button.btnBorder:focus{
+	color: #fb8c00;
+	border-color: #fb8c00;
+}
+
+button.btnBorder:active{
+	color: #fb8c00;
+	border: 1px solid #fb8c00;
+}
+
+/*Стили для NavHeader*/
+#navHeader ul li a {
+	margin: 10px 50px;
+    color: #ffffff;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+#navHeader ul li a:focus{
+	color: #fb8c00;
+}
+
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+	background: none;
+}
+
+#navHeader ul li a:hover{
+	background: none;
+	color: #fb8c00;
+}
+
+#navHeader ul li a:active{
+	color: #fb8c00;
+}
+
+nav.navbar.navbar-default {
+    background: none;
+    border-radius: 0;
+    border: none;
+}
+
+
+
+div#navHeader{
+    -webkit-transform: skew(-15deg);
+       -moz-transform: skew(-15deg);
+         -o-transform: skew(-15deg);
+    background: rgba(255, 255, 255, 0.08);
+    clear: both;
+    margin-top: 20px;
+}
+
+#navHeader .navbar{
+	-webkit-transform: skew(15deg);
+       -moz-transform: skew(15deg);
+         -o-transform: skew(15deg);
+}
+
+ul.dropdown-menu {
+    background: rgba(255, 255, 255, 0.08);
+}
+/*КОНЕЦ Стили для NavHeader*/
+
+/*Стиля для СЛОГАНА*/
+.headerTagline{
+	-webkit-transform: skew(-15deg);
+       -moz-transform: skew(-15deg);
+         -o-transform: skew(-15deg);
+    background: #1599f3;
+    clear: both;
+    margin-top: 130px;
+	-webkit-box-shadow: 15px 1px 10px 0px rgba(21,153,243,0.50),-15px 1px 10px 0px rgba(21,153,243,0.50);
+    -moz-box-shadow: 15px 1px 10px 0px rgba(21,153,243,0.50),-15px 1px 10px 0px rgba(21,153,243,0.50);
+    box-shadow: 15px 1px 10px 0px rgba(21,153,243,0.50),-15px 1px 10px 0px rgba(21,153,243,0.50);
+}
+
+.headerTagline h1{
+	-webkit-transform: skew(15deg);
+       -moz-transform: skew(15deg);
+         -o-transform: skew(15deg);
+    text-align: center;
+    color: #ffffff;
+    font-family: "RoboBold";
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;    
+}
+/*КОНЕЦСтиля для СЛОГАНА*/
+
+/*Ширина СЛОГАНА И НАВИГАЦИИ*/
+.widthNavHeader{
+	width: 86%;
+	margin: 0 auto;
+}
+
+.widthHeaderTagline{
+	max-width: 77%;
+	margin: 0 auto;
+}
+/*КОНЕЦ Ширина СЛОГАНА И НАВИГАЦИИ*/
+/*КОНЕЦ Стили для HEADER*/
+
+
+
+/*СТИЛИ ДЛЯ "Что мы чиним"*/
+/*СТИЛИ ДЛЯ БЛОКОВ С ТЕХНИКОЙ*/
+.block{
+	padding: 15px;
+}
+
+#whatWeRepair .insideWrapBlock{
+	background: #3eaffb;
+	min-height: 160px;
+}
+
+.block img{
+	float: left;
+}
+
+.block h3{
+    line-height: 70px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+	color: #ffffff;
+    font-family: "RoboBold";
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#whatWeRepair button.btnBorder{
+	margin: 15px;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+#whatWeRepair button.btnBorder:hover{
+	background: #fff;
+	color: #1399f4;
+	border-color: #fff;
+}
+/*КОНЕЦ СТИЛИ ДЛЯ БЛОКОВ С ТЕХНИКОЙ*/
+/*КОНЕЦ СТИЛИ ДЛЯ "Что мы чиним"*/
+
+
+
+
+/*СТИЛИ ДЛЯ БАННЕРА*/
+#banner{
+	width: 100%;
+	float: left;
+	text-align: center;
+	background: #f6f5f5;
+}
+
+#banner > div{
+	padding: 0;
+}
+
+#banner h3{
+	margin-top: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    }
+
+#banner h3 span{
+	font-family: "RoboBold";
+}
+
+#banner h3 span.backSpan{
+	background: #ffcb08;
+}
+
+
+#banner img{
+	float: left;
+}
+
+#banner img.girl{
+	float: right;
+}
+
+#banner button {
+    margin-top: 35px;
+    background: #fb8c00;
+    border: none;
+    font-family: "RoboBold";
+    text-transform: uppercase;
+}
+
+#banner button:hover{
+	color: #1399f4;
+}
+
+.bannerWrapContact{
+    margin-top: 30px;
+}
+
+#banner .bannerWrapContact img {
+    float: left;
+    margin: 0 7px 0 30px;
+}    
+
+.bannerWrapContact span.bold{
+	font-family: "RoboBold";
+	font-weight: 700;
+}
+
+#banner .bannerWrapContact span{
+	display: block;
+	float: left;
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#banner .contact.mobile{
+	display: none;
+}
+/*Стили для отдельной страницы с контактами*/
+#banner.pageContact{
+	background: #fff;
+}
+
+#banner.pageContact p{
+    margin-top: 20px;
+}
+
+/*КОНЕЦ СТИЛИ ДЛЯ БАННЕРА*/
+
+
+/*СТИЛИ ДЛЯ ПРЕИМУЩЕСТВА*/
+#advantages .caption h1{
+	color: #fff;
+	padding-top: 30px
+}
+
+#advantages{
+	background: url(../image/imgAdvantages/backAdvantages.png) no-repeat;
+	background-size: cover;
+}
+
+#backgroundAdvantagesShadow{
+	clear: both;
+	background: #006bb3;
+}
+
+#advantages .insideWrapBlock{
+    padding: 10px 10px 1px 10px;
+	background: #32a4f3;
+	background-image: linear-gradient(-45deg, rgba(19, 153, 244, 0.75) 0%, rgba(80, 184, 255, 0.75) 100%);
+}
+
+#advantages .imgCircle{
+    padding: 21px;
+    margin: auto;
+    min-height: 140px;
+    max-width: 140px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+#advantages .insideWrapBlock h5{
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.advantagesBlockInsideBorder{
+	min-height: 270px;
+	position:relative;
+}
+/*КОНЕЦ СТИЛИ ДЛЯ ПРЕИМУЩЕСТВА*/
+
+
+/*СТИЛИ ОБРАТНОГО ЗВОНКА*/
+.wrapper{
+	width:100%;
+	margin:20px auto;
+	padding:37px;
+	border:3px solid #fff;
+	position:relative;
+}
+
+.legend {
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    width: 38%;
+    text-align: center;
+    background: #333;
+    top: -18px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#callBack{
+	background: url(../image/imgCallBack/background.png) center;
+}
+
+#callBack .wrapper p{
+	font-family: "RoboBold";
+	font-weight: 700;
+	color: #fff;
+}
+
+#callBack .wrapper{
+	color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#callBack .form-inline {
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    width: 71%;
+    text-align: center;
+    background: #333;
+    top: 93px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#callBack input{
+	margin-right: 15px;
+	border: none;
+    border-radius: 0%;
+    width: 240px;
+    height: 50px;
+    font-family: "RoboBold";
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#callBack button{
+	margin: 0 0 0px 6px;
+    border: none;
+    border-radius: 0%;
+    width: 240px;
+    height: 51px;
+    background: #fb8c00;
+    color: #fff;
+    font-family: "RoboBold";
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#callBack button:hover{
+	color: #1399f4;
+}
+/*КОНЕЦ СТИЛИ ОБРАТНОГО ЗВОНКА*/
+
+
+/*СТИЛИ ДЛЯ БЛОКА С АКЦИЯМИ*/
+#stock{
+	position: relative;
+}
+
+.stockBanner{
+	background: #1399f4;
+	padding: 50px;
+	min-height: 300px;
+}
+
+#stock button{
+	margin: 0 0 0px 6px;
+    border: none;
+    border-radius: 0%;
+    width: 240px;
+    height: 51px;
+    background: #fb8c00;
+    color: #fff;
+    font-family: "RoboBold";
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 20px;
+	z-index: 10;
+    position: sticky;		
+}
+
+#stock button:hover{
+	color: #1399f4;
+}
+
+#stock h3{
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+#stock h2{
+	font-family: "RoboBold";
+	color: #ffffff;
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.stockBanner img:last-child{
+	position: absolute;
+    bottom: 0;
+    right: 50px;
+    z-index: 10;
+}
+
+.stockBanner img:first-child{
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    z-index: 10;
+}
+
+.stockBanner img:nth-child(5){
+    position: absolute;
+    left: 30px;
+    bottom: 0px;
+}
+/*КОНЕЦ СТИЛИ ДЛЯ БЛОКА С АКЦИЯМИ*/
+   
+
+/*СТИЛИ ДЛЯ БЛОКА С ПРИЧИНАМИ*/
+#reasons .insideWrapBlock{
+	background: url(../image/imgReasons/back.png);
+	background-size: cover;
+	color: #fff;
+}
+
+.reasonsBlockInsideBorder{
+	position: relative;
+	padding: 0 50px;
+    min-height: 250px;
+    overflow: hidden;
+}
+
+#reasons .imgCircle{
+    position: relative;
+    z-index: 10;
+    padding: 33px 0px;
+    margin: auto;
+    min-height: 140px;
+    max-width: 140px;
+    border: 7px solid #fff;
+    border-radius: 50%;
+}
+
+.imgCircle{
+	
+}
+
+#reasons .reasonsBlockInsideBorder span{
+    display: inline-block;
+    position: absolute;
+    color: #4eb7ff;
+    font-family: "RoboBold";
+    font-size: 300px;
+    bottom: -89px;
+    right: -60px;
+    opacity: 0.7;
+}
+
+#reasons .reasonsBlockInsideBorder h5{
+	display: inline-block;
+	position: relative;
+	z-index: 10px;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 400;
+}
+/*КОНЕЦ СТИЛИ ДЛЯ БЛОКА С ПРИЧИНАМИ*/
+
+
+/*СТИЛИ ДЛЯ БЛОГА*/
+#blog .blogBlockInsideBorder{
+    text-align: left;
+}
+
+#blog .col-md-4.col-sm-6{
+	padding-bottom: 10px;
+}
+
+#blog .blogBlockInsideBorder img{
+    width: 100%;
+}
+
+#blog .blogBlockInsideBorder h3{
+	width: 262px;
+	color: #212121;
+	font-family: "RoboBold";
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+#blog .blogBlockInsideBorder p{
+    height: 62px;
+    color: #212121;
+    line-height: 24px;
+}
+
+#blog .blogBlockInsideBorder a{
+    text-decoration: underline;
+}
+
+#blog button{
+	margin-top: 25px;
+	background: #1599f3;
+}
+
+/*Стли для развернутого блога*/
+#blog_deployed p{
+	line-height: 24px;
+    text-align: left;
+}
+
+#blog_deployed img{
+	width: 100%;
+}
+
+#blog_deployed .row > div{
+	position: relative;
+}
+
+#blog_deployed a{
+    position: absolute;
+    left: 15px;
+    top: 11px;
+}
+
+#blog_deployed i.fas.fa-angle-left {
+    font-size: 32px;
+    position: relative;
+    top: 7px;
+}     
+
+/*КОНЕЦ СТИЛИ ДЛЯ БЛОГА*/
+
+/*СТИЛИ ДЛЯ БЛОКА С КОНТАКТАМИ В КАРТЕ*/
+#findUs{
+	clear: both;
+	position: relative;
+}
+
+#map .mapContactBlock{
+    text-align: center;
+	border: 1px dashed #3195e4;
+    top: 120px;
+    right: 80px;
+	position: absolute;
+	width: 350px;
+	height: 320px;
+	background: #fefefc;
+	padding: 20px;
+}
+
+#map .mapContactBlock ul li{
+	color: #000;
+	text-align: left;
+}
+
+#map .mapContactBlock button{
+	border: none;
+    border-radius: 0%;
+    width: 240px;
+    height: 51px;
+    background: #fb8c00;
+    color: #fff;
+    font-family: "RoboBold";
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#map button:hover{
+	color: #1399f4;
+}
+
+#map .schedule ul:first-child{
+    font-family: "RoboBold";
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+#map .contact ul li{
+	margin-top: 10px;
+}
+/*КОНЕЦ СТИЛИ ДЛЯ БЛОКА С КОНТАКТАМИ В КАРТЕ*/
+
+
+/*КОНЕЦ СТИЛИ ДЛЯ FOOTER*/
+#footer h6{
+    font-size: 15px;
+	float: left;
+}
+
+#footer ul{
+    margin: 10px;
+	float: right;
+}
+
+#footer ul li{
+    float: left;
+    display: block;
+    margin: 0px 30px;
+
+}
+
+#footer ul li a{
+	text-decoration: underline;
+}
+/*КОНЕЦ СТИЛИ ДЛЯ FOOTER*/
+
+
+/*АДАПТАЦИЯ*/
+@media (max-width: 1262px){
+	/*АДАПТАЦИЯ БАНЕРА*/
+	#banner .bannerWrapContact img {
+    	margin: 0 7px 0 20px;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ БАНЕРА*/
+
+	/*АДАПТАЦИЯ БЛОКА С АКЦИЯМИ*/
+	.stockBanner img:first-child {
+    	left: 0;
+    }
+
+	.stockBanner img:last-child {
+    	right: 0;
+    }
+    /*КОНЕЦ АДАПТАЦИЯ БЛОКА С АКЦИЯМИ*/	
+}
+
+@media (max-width: 1223px){
+	
+	#banner .bannerWrapContact img {
+    	margin: 0 7px 0 10px;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ БАНЕРА*/
+}
+
+@media (max-width: 1200px){
+	#header #topHeader div.logo{
+		text-align: center;
+	}
+
+	#topHeader div:first-child {
+		border-right: none;
+	}
+
+	#navHeader ul li a {
+    	margin: 10px 34px;
+	}
+
+	/*АДАПТАЦИЯ БЛОКА ОБРАТНОГО ЗВОНКА*/
+	#callBack .legend span {
+    	font-size: 20px;
+	}
+
+	#callBack input {
+	    margin-right: 3px;
+ 	    width: 200px;
+	    height: 40px;
+	}
+
+	#callBack button {
+	    margin-right: 3px;
+ 	    width: 200px;
+	    height: 41px;
+	}
+
+	#callBack .form-inline {
+        top: 99px;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ БЛОКА ОБРАТНОГО ЗВОНКА*/
+
+	/*АДАПТАЦИЯ БАНЕРА*/
+	#banner .bannerWrapContact{
+		display: none;
+	}
+
+	#banner .contact.mobile {
+		width: 270px;
+		margin: 0 auto;
+		display: block;
+	}
+
+	#banner .contact.mobile ul li{
+	    font-size: 23px;
+		color: #000
+	}
+
+	#banner button {
+		margin: 0 0 0px 0;
+	}
+
+	#banner h3 {
+    	margin-top: 15px;
+    	font-size: 26px;
+    }
+
+    #banner .col-sm-8 {
+    	z-index: 10;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ БАНЕРА*/
+
+	/*АДАПТАЦИЯ БЛОКА С АКЦИЯМИ*/
+	#stock h2 {
+    	font-size: 30px;
+	}
+
+	#stock h3 {
+    	font-size: 24px;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ БЛОКА С АКЦИЯМИ*/
+	
+	/*АДАПТАЦИЯ ДЛЯ БЛОКА С ПРИЧИНАМИ*/
+	.reasonsBlockInsideBorder {
+    	padding: 0 10px;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ ДЛЯ БЛОКА С ПРИЧИНАМИ*/
+}
+
+@media (max-width: 1170px){
+	/*АДАПТАЦИЯ БЛОКА С АКЦИЯМИ*/
+	#stock h2 {
+    	font-size: 25px;
+	}
+
+	#stock h3 {
+    	font-size: 20px;
+	}
+
+	#stock button {
+	    width: 220px;
+	    height: 45px;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ БЛОКА С АКЦИЯМИ*/
+}	
+
+@media (max-width: 992px){
+	.headerTagline {
+        margin-top: 150px;
+	}
+
+	#navHeader ul li a {
+	    margin: 10px 15px;
+	}
+
+	.schedule ul :first-child{
+       	font-size: 16px;
+	}
+
+	#topHeader > div {
+       	min-height: 132px;
+	}
+
+	/*АДАПТАЦИЯ БАНЕРА*/
+	#banner .col-sm-8 {
+    	margin: 10px auto;
+    	float: none;
+	}
+
+	#banner .col-sm-2 {
+    	display: none;
+	}
+
+	#banner .bannerButton {
+	    margin: 0 auto;
+        width: 300px;
+    }
+
+    #banner button {
+    	width: 300px;
+    	margin: 0 0 10px 0;
+	}
+
+    #banner h3 {
+    	margin-top: 0px;
+    	font-size: 24px;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ БАНЕРА*/
+	
+	/*АДАПТАЦИЯ БЛОКА "ЧТО МЫ ЧИНИМ"*/
+	#whatWeRepair .col-md-6.col-sm-12.block{
+    	max-width: 500px;
+    	float: none;
+    	margin: 0 auto;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ БЛОКА "ЧТО МЫ ЧИНИМ"*/
+
+	/*АДАПТАЦИЯ ПРЕИМУЩЕСТВА*/
+	#advantages .col-md-3.col-sm-6 {
+    	padding-bottom: 15px;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ ПРЕИМУЩЕСТВА*/
+
+	/*АДАПТАЦИЯ БЛОКА ОБРАТНОГО ЗВОНКА*/
+	#callBack .legend span {
+    	font-size: 15px;
+	}
+
+	#callBack p {
+    	font-size: 18px;
+	}
+
+	#callBack input {
+	    margin-right: 2px;
+ 	    width: 150px;
+	    height: 36px;
+	}
+
+	#callBack button {
+	    margin-right: 2px;
+ 	    width: 150px;
+	    height: 36px;
+	}
+
+	#callBack .form-inline {
+        top: 92px;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ БЛОКА ОБРАТНОГО ЗВОНКА*/
+
+	/*АДАПТАЦИЯ БЛОКА С АКЦИЯМИ*/
+	#stock h2 {
+    	font-size: 36px;
+	}
+
+	#stock h3 {
+    	font-size: 30px;
+	}
+
+	#stock button {
+	    width: 240px;
+	    height: 51px;
+	}
+
+	#stock .stockBanner img:first-child{
+		display: none;
+	}
+
+	#stock .stockBanner img:last-child{
+		display: none;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ БЛОКА С АКЦИЯМИ*/
+
+	/*АДАПТАЦИЯ ДЛЯ БЛОКА С ПРИЧИНАМИ*/
+	#reasons .col-md-3.col-sm-6 {
+    	padding-bottom: 15px;
+	}
+
+	#reasons .col-md-3.col-sm-6 {
+	    max-width: 450px;
+	    margin: 0 auto;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ ДЛЯ БЛОКА С ПРИЧИНАМИ*/
+
+	/*АДАПТАЦИЯ FOOTER И КАРТЫ*/
+	#map .mapContactBlock{
+		display: none;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ FOOTER И КАРТЫ*/
+
+	/*Адаптация развернутого блога*/
+	#blog_deployed a{
+	    position: absolute;
+	    left: 15px;
+        top: -7px;
+	}
+}	
+
+@media (max-width: 768px){
+
+	div#navHeader{
+		transform: none;
+	}
+
+	#navHeader .navbar{
+		transform: none;
+	}
+
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    	border-color: red;
+	}
+
+	div#bs-example-navbar-collapse-1{
+		border: none;
+	}
+	
+	/*АДАПТАЦИЯ ПРЕИМУЩЕСТВА*/
+	#advantages .col-md-3.col-sm-6 {
+    margin: 0 auto;
+    max-width: 400px;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ ПРЕИМУЩЕСТВА*/
+}
+
+@media (max-width: 767px){
+	/*АДАПТАЦИЯ HEADER*/
+	#header{
+		background: url(../image/imgHeader/layer-17.png) center;
+		background-size: none;
+	}
+
+	.row.widthHeaderTagline {
+    	display: none;
+	}
+
+	#topHeader > div {
+		min-height: 0;
+    	text-align: center;
+	}
+
+	.schedule i {
+	    float: none;
+	}
+
+	#topHeader div:not(:last-child) {
+		border-right: none;
+	}
+
+	.col-lg-3.col-sm-4.contact {
+	    margin: 0 auto;
+	    width: 165px;
+    }
+
+	.feedback :last-child {
+        margin-top: -20px;
+	    margin-left: 10px;
+	}
+
+	#header button.btnBorder {
+    	float: left;
+	}
+
+	.col-lg-3.col-sm-4.feedback {
+        max-width: 438px;
+    	margin: 0 auto;
+	}
+
+	div#navHeader {
+		background: none;
+		margin: 0;
+	}
+
+	.navbar-toggle {
+		z-index: 10;
+	    top: 0px;
+	    left: 0;
+	    position: absolute;
+	    float: left;
+    }
+
+    .widthNavHeader {
+    	position: absolute;
+    	top: 0;
+    }
+
+    button.navbar-toggle.collapsed {
+    	border: none;
+	}
+
+	.navbar-toggle .icon-bar {
+	    width: 28px;
+	    height: 3px;
+	    border-radius: 1px;
+	}
+
+	.navbar-default .navbar-toggle .icon-bar {
+    	background-color: #fff;
+	}
+
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  	    background: none;
+	}
+
+	.navbar-default .navbar-toggle{
+	    transform: rotate(90deg);
+	    -webkit-transform: rotate(90deg);
+	    -moz-transform: rotate(90deg);
+	    -o-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	}
+
+	#header .navbar-default .navbar-toggle.collapsed{
+		transform: none;
+	}
+
+	.navbar-default .navbar-toggle {
+    	border: none; 
+	}
+
+	ul.nav.navbar-nav {
+		position: absolute;
+    	height: 571px;
+    	width: 100%;
+    	background: rgba(0,0,0,0.95);
+	}
+
+	div#bs-example-navbar-collapse-1 li a {
+    	border-bottom: 1px solid rgba(255, 255,255,0.2);
+	}
+
+	.widthNavHeader {
+    	width: 100%;
+    }
+    
+    .container {
+    	padding: 20px 0 0 0;
+	}
+
+	#header ul {
+    	padding: 0;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ HEADER*/
+	
+	/*АДАПТАЦИЯ БЛОКА "ЧТО МЫ ЧИНИМ"*/
+	#whatWeRepair button.btnBorder {
+	    margin: 0;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ БЛОКА "ЧТО МЫ ЧИНИМ"*/
+
+
+	/*АДАПТАЦИЯ ПРЕИМУЩЕСТВА*/
+	#advantages .caption h1 {
+    	padding-top: 0; 
+	}
+
+	#advantages .col-sm-3 {
+    	padding: 10px;
+	}
+
+	#advantages {
+    	padding: 0 20px 0 20px;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ ПРЕИМУЩЕСТВА*/
+
+	/*АДАПТАЦИЯ БЛОКА ОБРАТНОГО ЗВОНКА*/
+	div#callBack {
+    	display: none;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ БЛОКА ОБРАТНОГО ЗВОНКА*/	
+
+	/*АДАПТАЦИЯ БЛОКА С АКЦИЯМИ*/
+	#stock .stockBanner {
+    	background: url(../image/imgStock/stockBackMobile.png) center;
+	}
+
+	#stock .stockBanner img{
+		display: none;
+	}
+
+	#stock h3 {
+	    font-size: 20px;
+    }
+
+    #stock h2 {
+	    font-size: 24px;
+    }
+
+    #stock button {
+    	width: 300px;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ БЛОКА С АКЦИЯМИ*/
+	
+	
+	/*АДАПТАЦИЯ БЛОГА*/
+	#blog .col-md-4.col-sm-6 {
+    	max-width: 450px;
+    	margin: 0 auto;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ БЛОГА*/
+	
+	/*АДАПТАЦИЯ FOOTER И КАРТЫ*/
+	#footer h6{
+		float: none;
+	}
+
+	#footer ul{
+		float: none;
+	}
+
+	#footer ul li {
+		float: none;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ FOOTER И КАРТЫ*/
+
+	/*Адаптация развернутого блога*/
+	#blog_deployed a{
+	    position: absolute;
+	    left: 15px;
+        top: 20px;
+	}
+}
+
+@media (max-width: 580px){
+	/*АДАПТАЦИЯ БЛОКА "ЧТО МЫ ЧИНИМ"*/
+	#whatWeRepair .block img {
+    	width: 100%;
+    	float: none;
+	}
+
+	#whatWeRepair button.btnBorder {
+    	margin-bottom: 15px;
+	}
+
+	#whatWeRepair .insideWrapBlock {
+	    max-width: 300px;
+	    margin: 0 auto;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ БЛОКА "ЧТО МЫ ЧИНИМ"*/
+
+	/*Адаптация развернутого блога*/
+	#blog_deployed a{
+	    position: absolute;
+	    left: 15px;
+        top: 25px;
+	}
+}
+
+@media (max-width: 533px){
+	/*АДАПТАЦИЯ БЛОКА С АКЦИЯМИ*/
+	#stock h2 {
+    	font-size: 21px;
+	}
+
+	#stock h3 {
+    	font-size: 19px;
+	}
+
+	.stockBanner {
+    	padding: 50px 0 0 0;
+    }	
+	/*КОНЕЦ АДАПТАЦИЯ БЛОКА С АКЦИЯМИ*/
+}
+
+@media (max-width: 442px){
+	/*Адаптация развернутого блога*/
+	#blog_deployed a{
+	    position: absolute;
+	    left: 15px;
+        top: 50px;
+	}
+}
+
+
+@media (max-width: 426px){
+	/*АДАПТАЦИЯ HEADER*/
+	#header button.btnBorder {
+    	float: none;
+    	margin: 5px; 
+	}
+
+	#header .feedback :last-child {
+    	margin: 0;
+	}
+	/*КОНЕЦ АДАПТАЦИЯ HEADER*/
+
+	/*АДАПТАЦИЯ БЛОКА С АКЦИЯМИ*/
+	#stock h2 {
+    	font-size: 18px;
+	}
+
+	#stock h3 {
+    	font-size: 16px;
+	}
+
+	#stock button {
+    	width: 280px;
+    }	
+	/*КОНЕЦ АДАПТАЦИЯ БЛОКА С АКЦИЯМИ*/
+}
+/*КОНЕЦ АДАПТАЦИЯ*/
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+/*Подключение шрифтов*/
+@font-face {
+    font-family: "RoboBold"; 
+    src: url("../fonts/RobotoCondensed-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "RoboLight"; 
+    src: url("../fonts/RobotoCondensed-Light.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "RoboBoldItalic"; 
+    src: url("../fonts/RobotoCondensed-BoldItalic.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "RoboItalic"; 
+    src: url("../fonts/RobotoCondensed-Italic.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "RoboLightItalic"; 
+    src: url("../fonts/RobotoCondensed-LightItalic.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "RoboRegular"; 
+    src: url("../fonts/RobotoCondensed-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+/*КОНЕЦ Подключение шрифтов*/
+
+.modal-content {
+	border-radius: 0px;
+    text-align: center;
+}
+
+.modal-content input {
+    margin: 5px auto;
+    border-radius: 0%;
+    width: 350px;
+    height: 50px;
+    font-family: "RoboBold";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.modal-body p{
+    
+}
+
+.modal-header{
+	border: none;
+}
+
+.modal-footer {
+	border: none;
+	text-align: center;
+}
+
+.modal-footer button{
+    padding: 15px 118px;
+	background: #fb8c00;
+    border: none;
+    font-family: "RoboBold";
+    text-transform: uppercase;
+}
+
+.modal-footer button:hover{
+	border: none;
+	color: #1399f4;
+}
+
